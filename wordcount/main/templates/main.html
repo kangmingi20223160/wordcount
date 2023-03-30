@@ -1,0 +1,16 @@
+{%load static%}
+
+<body>
+    <h1>WorldCount</h1>
+    <a href={% url 'about' %}>about</a>
+    <form action={%url 'result'%} method="GET">
+        <textarea name="text" id="" cols="30" rows="10"></textarea>
+        <button type="submit">SUBMIT</button>
+    </form>
+</body>
+<style>
+    body {
+        text-align: center;
+        background-image: url("%static '\image\bonobono.jpg'%}");
+    }
+</style>

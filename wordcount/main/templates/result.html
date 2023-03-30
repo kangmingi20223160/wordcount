@@ -1,0 +1,20 @@
+<body>
+<h1>결과</h1>
+
+<a href={% url 'main' %}>메인으로 바로가기</a>
+<hr>
+
+{%for word,value in words%}
+    단어: {{word}} 갯수: {{value}}
+    <br/>
+    <br/>
+{% endfor %}
+
+</body>
+<style>
+    body {
+        text-align: center;
+        background-image: url("wordcount\main\templates\bonobono.jpg")
+    }
+</style>
+
